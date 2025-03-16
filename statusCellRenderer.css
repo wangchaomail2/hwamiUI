@@ -1,0 +1,82 @@
+.tag {
+  border-radius: 100px;
+  padding-left: 4px;
+  padding-right: 12px;
+  line-height: 2;
+  font-weight: 500;
+  border: 1.5px solid rgba(41, 41, 41, 0.1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/**1-用户已提交订单；2-向商家推送订单；4-商家已确认；8-订单已完成；9-订单已取消。**/
+
+.statusTag1 , .statusTag2 , .statusTag4 {
+  background-color: rgb(255, 0, 0, 0.05);
+  color: rgb(234, 83, 83);
+  border: 1.5px solid rgb(255, 0, 0, 0.3);
+}
+
+.statusTag8 {
+  
+  background-color: #84ca8130;
+  border: 1.5px solid rgb(70, 227, 114, 0.2);
+}
+
+.statusTag9 {
+  background-color: #caab7036;
+}
+
+.circle {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  margin-right: 8px;
+  margin-left: 6px;
+}
+
+.circle1  ,.circle2 ,.circle4 {
+  background-color: #ea5353;
+}
+
+.circle8 {
+  background-color: #6d9b7e;
+}
+
+.circle9 {
+  background-color: #a06d37;
+}
+
+
+.iconCell {
+  width: 60px;
+  height: 60px;
+  background-size: cover;
+
+}
+
+
+.PeiSong {
+  background-image: url('/images/peisong.svg');
+}
+
+
+.ZiQu {
+  background-image: url('/images/ziqu.svg');
+}
+
+.Runtime {
+  background-image: url('/images/runtime.svg');
+}
+
+
+.Pre {
+  background-image: url('/images/pre.svg');
+}
+.DaySeq{
+  
+  font-weight:500;
+  font-size:40px;
+}
+

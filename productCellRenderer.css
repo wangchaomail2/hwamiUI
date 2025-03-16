@@ -1,0 +1,97 @@
+.productCellGroup {
+  display: flex; /* 使用 Flexbox 布局 */
+  flex-wrap: wrap; /* 允许子元素换行 */
+  
+  max-width: 100%; /* 确保宽度不会超出父容器 */
+  gap: 10px; /* 子元素之间的间距 */
+  align-content : flex-start ;
+}
+
+
+
+
+.productCell {
+  
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  
+  background-color: rgba(120, 120, 120, 0.2); /* 半透明背景，60% 不透明度 */
+  border-radius: 8px;
+  width:200px;
+
+  box-sizing: border-box; /* 确保宽高包含内边距和边框 */
+}
+
+.image {
+  max-width: 100%;
+  max-height: 120px;
+  background-color: rgba(201, 201, 201, 0.2);
+  border-radius: 8px;
+  position: relative;
+  display: inline-block;
+  
+}
+
+.image img {
+  width: 120px;
+  height:120px;
+}
+
+
+
+.productCell div {
+  padding-bottom: 0;
+
+  line-height: 1.5;
+
+}
+
+.productCell img {
+ 
+  border-top-left-radius: 8px;  /* 左上角 */
+  border-top-right-radius: 0px; /* 右上角 */
+  border-bottom-left-radius: 8px; /* 左下角 */
+  border-bottom-right-radius: 0px; /* 右下角 */
+
+}
+
+
+
+.prodText {
+  width: 80px; /* 限制宽度 */
+  max-width: 100%; /* 确保宽度不会超出父容器 */
+  
+  padding: 5px; /* 可选：内边距 */
+  overflow-wrap: break-word; /* 确保文字换行 */
+  word-wrap: break-word; /* 兼容旧浏览器 */
+  white-space: normal; /* 确保文字可以换行 */
+}
+
+
+
+
+
+.stockCell {
+ 
+  color: var(--color-text-secondary);
+  position: absolute; /* 绝对定位 */
+  z-index:10;
+  background-color: rgba(18, 27, 38, 0.7); 
+  botton: 0px; /* 距离顶部 10px */
+  right: 0px; /* 距离右侧 10px */
+
+  width: 25px;
+  hight: 25px;
+  display: flex; /* 启用 flexbox */
+
+  justify-content: center; /* 水平居中 */
+  align-items: center; /* 垂直居中 */
+  
+  border-radius: 18px;
+  padding-top: 2px;
+  
+  padding-right: 4px;
+  padding-left: 4px;
+  font-size: 20px;
+}
